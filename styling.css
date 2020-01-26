@@ -1,0 +1,69 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vw;
+}
+
+p {
+  font-size: 2vw;
+  text-shadow: 0.125vw 0.125vw lightgray;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  position: absolute;
+  left: 60vw;
+  top: 20vw;
+  width: 30%;
+  animation-name: CATZ;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 1;
+  border: 0.7vw dotted rgba(0, 0, 0, 0.1);
+}
+
+img:hover {
+  animation-duration: 0.5s;
+}
+
+@keyframes CATZ {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#navbar {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding-bottom: 1vw;
+  border-radius: 1vw;
+  box-shadow: 0.25vw 0.25vw 0.8vw lightgray;
+}
+
+#navbar > div:hover {
+  text-shadow: 0 0 1vw white;
+  cursor: pointer;
+}
+
+.end {
+  font-size: 1vw;
+  font-weight: lighter;
+  padding-bottom: 7vw;
+}
+
+.fas {
+  position: relative;
+  bottom: 1vw;
+  padding-right: 0.4vw;
+}
